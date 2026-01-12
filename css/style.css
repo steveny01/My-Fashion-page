@@ -1,0 +1,367 @@
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* Sub-header styles */
+.sub-header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.sub-header .info li {
+  color: #7a7a7a;
+  border-right: 1px solid #eee;
+  padding-right: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sub-header .info li:last-child {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.sub-header .info li i {
+  color: #f35525;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.sub-header .social-links li a {
+  width: 30px;
+  height: 30px;
+  background-color: #cdcdcd;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-size: 14px;
+}
+
+.sub-header .social-links li a:hover {
+  background-color: #f35525;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 6px 5px -4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000 !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f35525 !important;
+}
+
+
+.hero-header {
+  background-image: url('bg2.jpeg'); /* Ensure correct path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.hero-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-header .container {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.c1-detail {
+  color: white;
+}
+
+.c1-detail .c1-location {
+  background-color: white;
+  color: black;
+  padding: 6px 12px;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.c1-detail .c1-location span {
+  color: red;
+  font-weight: bold;
+}
+
+.c1-detail h2 {
+  color: white;
+  font-size: 45px;
+  font-weight: bolder;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.c1-detail h2 em {
+  font-style: italic;
+  color: #f7c948;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-header {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero-header .container {
+    text-align: center;
+  }
+
+  .c1-detail h2 {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .c1-detail .c1-location {
+    font-size: 14px;
+    margin: 0 auto 15px;
+  }
+}
+
+
+    .card-img-top {
+      height: 350px;
+      object-fit: cover;
+    }
+
+   #cart {
+    position: fixed; /* Use fixed so it stays at the top of the screen */
+    top: 40px;
+    right: 60px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    z-index: 1050; /* Must be higher than Bootstrap navbar's z-index (usually 1030–1040) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 576px) {
+  .navbar-brand img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* .footer {
+      background: #101828;
+      display: flex;
+      flex-direction: column;
+      gap: 70px;
+      margin-top: 50px;
+      padding: 2% 10%;
+      color: #edecec;
+    }
+
+    .footer .closure {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+
+    .footer .logo_description {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 25px;
+    }
+
+    .footer .description {
+      font-size: 15px;
+      font-weight: 200;
+      max-width: 300px;
+    }
+
+    .footer .navigations {
+      width: 80%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .footer .navigations ul {
+      list-style: none;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .footer .navigations ul li:first-child {
+      color: #6B6B6B;
+      font-size: 13px;
+    }
+
+    .footer .navigations ul li:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    .footer .navigations ul a {
+      color: #ffffff;
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    .footer .navigations ul a .pod {
+      background: #ffffff;
+      color: #101828;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: 400;
+      padding: 2px;
+    }
+
+    .footer .footnote {
+      font-weight: 200;
+      font-size: 13px;
+      text-align: center;
+    } */
+
+
+  .fashion-footer {
+  background-color: #101828;
+  color: #fff;
+  padding: 60px 10%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-about {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-about h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #f7c948;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.social-icons li a {
+  color: white;
+  font-size: 16px;
+  background: #f35525;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.social-icons li a:hover {
+  background: #e5471d;
+}
+
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #f7c948;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links ul a:hover {
+  color: #f35525;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
