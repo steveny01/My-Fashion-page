@@ -72,8 +72,8 @@ body, html {
 }
 
 
-.hero-header {
-  background-image: url('bg2.jpeg'); /* Ensure correct path */
+/*.hero-header {
+  background-image: url('bg2.jpeg'); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -84,6 +84,14 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 0 15px;
+}*/
+
+.hero-header {
+  background-image: url('your-image.jpg');
+  background-size: contain;  /* Shows full image without stretching */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
 }
 
 .hero-header::before {
