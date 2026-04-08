@@ -70,7 +70,8 @@
           <div class="card-body">
             <h5 class="card-title">Royal Agbada</h5>
             <p class="card-text">Elegant, traditional agbada for kings of style.</p>
-            <button class="btn btn-dark w-100" onclick="addToCart('Royal Agbada')">Add to Cart</button>
+            <!-- <button class="btn btn-dark w-100" onclick="addToCart('Royal Agbada')">Add to Cart</button> -->
+            <button class="btn btn-dark w-100" onclick="addToCart('Royal Agbada', )">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -80,7 +81,8 @@
           <div class="card-body">
             <h5 class="card-title">Corporate Touch</h5>
             <p class="card-text">Perfect blend of formality and creativity.</p>
-            <button class="btn btn-dark w-100" onclick="addToCart('Corporate Touch')">Add to Cart</button>
+            <!-- <button class="btn btn-dark w-100" onclick="addToCart('Corporate Touch')">Add to Cart</button> -->
+            <button class="btn btn-dark w-100" onclick="addToCart('Corporate Touch', )">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -90,7 +92,8 @@
           <div class="card-body">
             <h5 class="card-title">Senator Fit</h5>
             <p class="card-text">A sharp statement piece for gentlemen.</p>
-            <button class="btn btn-dark w-100" onclick="addToCart('Senator Fit')">Add to Cart</button>
+            <!-- <button class="btn btn-dark w-100" onclick="addToCart('Senator Fit')">Add to Cart</button> -->
+            <button class="btn btn-dark w-100" onclick="addToCart('Senator Fit', )">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -98,10 +101,21 @@
   </main>
 
   <!-- Cart Display -->
-  <div id="cart">
+  <!-- <div id="cart">
     <h6>🛒 Cart</h6>
     <ul id="cart-items" class="list-unstyled mb-0"></ul>
+  </div> -->
+  <!-- Cart Display -->
+  <div id="cart" style="position:fixed; top:100px; right:30px; width:250px; background:white; border:1px solid #ddd; padding:15px; box-shadow:0 0 10px rgba(0,0,0,0.2); z-index:1050;">
+    <h6>🛒 Cart</h6>
+    <ul id="cart-items" class="list-unstyled mb-2"></ul>
+    <button onclick="shareCart()" style="width:100%; background:#25D366; color:white; border:none; padding:8px; border-radius:5px; font-weight:bold;">
+      Share Cart via WhatsApp
+    </button>
   </div>
+  
+
+  
 
   <footer class="fashion-footer">
   <div class="footer-content">
