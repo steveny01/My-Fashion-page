@@ -85,10 +85,11 @@ body, html {
   background: url(bg4.jpg);
   background-repeat: no-repeat;
   background-position: center; 
+  width: 100%;
   height:80vh;
-   min-height: 500px; /* prevents it from being too small */
+  min-height: 500px; /* prevents it from being too small */
   background-color: gray;
-   position: relative;
+  position: relative;
   display: flex;
   justify-content: center;
   /* color: rgb(90, 64, 64); */
