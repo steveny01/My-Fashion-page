@@ -69,7 +69,7 @@ function shareCart() {
     return;
   }
 
-  let message = "Hey! Check out my selected products from Voboss Couture:\n\n";
+  let message = "Hello Voboss Couture,\nHere are the outfits I would love you to sew for me:\n\n";
   cart.forEach((item, index) => {
     message += `${index + 1}. ${item.name}\n`;
   });
