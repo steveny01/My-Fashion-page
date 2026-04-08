@@ -83,8 +83,8 @@ body, html {
 
 .hero-section {
   background: url(bg4.jpg);
-  /* background-repeat: no-repeat;
-  background-position: center; */
+  background-repeat: no-repeat;
+  background-position: center; 
   height:80vh;
    min-height: 500px; /* prevents it from being too small */
   background-color: gray;
