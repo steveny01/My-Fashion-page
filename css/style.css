@@ -71,8 +71,7 @@ body, html {
   color: #f35525 !important;
 }
 
-
-.hero-header {
+/* .hero-header {
   background-image: url('bg2.jpeg'); 
   background-repeat: no-repeat;
   background-position: center;
@@ -84,8 +83,25 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 0 15px;
-}
+}  */
 
+.hero-header {
+  background-image: url('bg2.jpeg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 85vh; /* 🔥 reduce from 100vh */
+  min-height: 500px; /* prevents it from being too small */
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 20px;
+}
 
 
 .hero-header::before {
